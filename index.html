@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list</title>
+</head>
+<style>
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+    }
+    .button-add{
+        background-color: rgb(255, 34, 178);
+        color:  white;
+        border: none;
+        border-radius: 5px;
+        width: 100px;
+        height: 35px;
+    }
+    .task{
+        height: 30px;
+    }
+    li{
+        list-style-type: none;
+    }
+</style>
+<body>
+    <div class="container">
+    <h1 class="title">ToDo List</h1>
+    <div class="task-input">
+        <input type="text" class="task" id="task" placeholder="Введите задачу">
+        <button class="button-add" id="buttonAdd">Добавить</button>
+    </div>
+    <ul id="taskList">
+    </ul>
+    </div>
+    <script src="./index.js">
+        
+    </script>
+</body>
+</html>
